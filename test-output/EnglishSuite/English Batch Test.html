@@ -1,0 +1,611 @@
+<html>
+<head>
+<title>TestNG:  English Batch Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>English Batch Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>39/6/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Jun 17 10:11:50 IST 2020</td>
+</tr>
+<tr><td>Total time:</td><td>81 seconds (81258 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testnglearning_youtubechannel.TestCases_ExcelSheet_DataProvider.Combo1()'><b>Combo1</b><br>Test class: testnglearning_youtubechannel.TestCases_ExcelSheet_DataProvider<br>Parameters: , </td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#login1&quot;}
+  (Session info: chrome=83.0.4103.97)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;LAPTOP-13LQO7QE&apos;, ip: &apos;172.20.10.2&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.97, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\Asus\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:52462}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 07270fc82a9b2878670c6cc9d0f21440
+*** Element info: {Using=id, value=login1}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:368)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at testnglearning_youtubechannel.TestCases_ExcelSheet_DataProvider.Combo1(TestCases_ExcelSheet_DataProvider.java:28)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace29774113", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace29774113'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#login1&quot;}
+  (Session info: chrome=83.0.4103.97)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;LAPTOP-13LQO7QE&apos;, ip: &apos;172.20.10.2&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.97, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\Asus\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:52462}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 07270fc82a9b2878670c6cc9d0f21440
+*** Element info: {Using=id, value=login1}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:368)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at testnglearning_youtubechannel.TestCases_ExcelSheet_DataProvider.Combo1(TestCases_ExcelSheet_DataProvider.java:28)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:821)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:588)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1214)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1136)
+	at org.testng.TestNG.runSuites(TestNG.java:1066)
+	at org.testng.TestNG.run(TestNG.java:1034)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>testnglearning_youtubechannel.TestCases_ExcelSheet_DataProvider@37374a5e</td></tr>
+<tr>
+<td title='testnglearning_youtubechannel.TestCases_ExcelSheet_DataProvider.Combo1()'><b>Combo1</b><br>Test class: testnglearning_youtubechannel.TestCases_ExcelSheet_DataProvider<br>Parameters: , </td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#login1&quot;}
+  (Session info: chrome=83.0.4103.97)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;LAPTOP-13LQO7QE&apos;, ip: &apos;172.20.10.2&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.97, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\Asus\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:52535}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 93b14b9787b1fe9f3eb1e8cb7d5716c0
+*** Element info: {Using=id, value=login1}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:368)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at testnglearning_youtubechannel.TestCases_ExcelSheet_DataProvider.Combo1(TestCases_ExcelSheet_DataProvider.java:28)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1346354118", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1346354118'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#login1&quot;}
+  (Session info: chrome=83.0.4103.97)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;LAPTOP-13LQO7QE&apos;, ip: &apos;172.20.10.2&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.97, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\Asus\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:52535}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 93b14b9787b1fe9f3eb1e8cb7d5716c0
+*** Element info: {Using=id, value=login1}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:368)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at testnglearning_youtubechannel.TestCases_ExcelSheet_DataProvider.Combo1(TestCases_ExcelSheet_DataProvider.java:28)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:821)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:588)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1214)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1136)
+	at org.testng.TestNG.runSuites(TestNG.java:1066)
+	at org.testng.TestNG.run(TestNG.java:1034)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>testnglearning_youtubechannel.TestCases_ExcelSheet_DataProvider@37374a5e</td></tr>
+<tr>
+<td title='testnglearning_youtubechannel.HardAssert_vs_SoftAssert.HardAssertionLogic()'><b>HardAssertionLogic</b><br>Test class: testnglearning_youtubechannel.HardAssert_vs_SoftAssert</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at testnglearning_youtubechannel.HardAssert_vs_SoftAssert.HardAssertionLogic(HardAssert_vs_SoftAssert.java:16)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1596144422", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1596144422'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.failNotEquals(Assert.java:968)
+	at org.testng.Assert.assertTrue(Assert.java:43)
+	at org.testng.Assert.assertTrue(Assert.java:53)
+	at testnglearning_youtubechannel.HardAssert_vs_SoftAssert.HardAssertionLogic(HardAssert_vs_SoftAssert.java:16)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:821)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:588)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1214)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1136)
+	at org.testng.TestNG.runSuites(TestNG.java:1066)
+	at org.testng.TestNG.run(TestNG.java:1034)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>testnglearning_youtubechannel.HardAssert_vs_SoftAssert@66d1af89</td></tr>
+<tr>
+<td title='testnglearning_youtubechannel.AlwaysRun.Login()'><b>Login</b><br>Test class: testnglearning_youtubechannel.AlwaysRun</td>
+<td><div><pre>java.lang.AssertionError: Deliberately failing this
+	at testnglearning_youtubechannel.AlwaysRun.Login(AlwaysRun.java:14)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1439361845", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1439361845'><pre>java.lang.AssertionError: Deliberately failing this
+	at org.testng.Assert.fail(Assert.java:97)
+	at testnglearning_youtubechannel.AlwaysRun.Login(AlwaysRun.java:14)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:821)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:588)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1214)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1136)
+	at org.testng.TestNG.runSuites(TestNG.java:1066)
+	at org.testng.TestNG.run(TestNG.java:1034)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>testnglearning_youtubechannel.AlwaysRun@52f759d7</td></tr>
+<tr>
+<td title='testnglearning_youtubechannel.HardAssert_vs_SoftAssert.SoftAssertionLogic()'><b>SoftAssertionLogic</b><br>Test class: testnglearning_youtubechannel.HardAssert_vs_SoftAssert</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	expected [true] but found [false],
+	Not equal expected [false] but found [true]
+	at testnglearning_youtubechannel.HardAssert_vs_SoftAssert.SoftAssertionLogic(HardAssert_vs_SoftAssert.java:38)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace220432328", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace220432328'><pre>java.lang.AssertionError: The following asserts failed:
+	expected [true] but found [false],
+	Not equal expected [false] but found [true]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+	at testnglearning_youtubechannel.HardAssert_vs_SoftAssert.SoftAssertionLogic(HardAssert_vs_SoftAssert.java:38)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:821)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:588)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1214)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1136)
+	at org.testng.TestNG.runSuites(TestNG.java:1066)
+	at org.testng.TestNG.run(TestNG.java:1034)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>testnglearning_youtubechannel.HardAssert_vs_SoftAssert@66d1af89</td></tr>
+<tr>
+<td title='testnglearning_youtubechannel.SoftAssert_Learning.SoftTestCaseValiadtion()'><b>SoftTestCaseValiadtion</b><br>Test class: testnglearning_youtubechannel.SoftAssert_Learning</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	expected [true] but found [false]
+	at testnglearning_youtubechannel.SoftAssert_Learning.SoftTestCaseValiadtion(SoftAssert_Learning.java:19)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace249515830", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace249515830'><pre>java.lang.AssertionError: The following asserts failed:
+	expected [true] but found [false]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+	at testnglearning_youtubechannel.SoftAssert_Learning.SoftTestCaseValiadtion(SoftAssert_Learning.java:19)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:821)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:588)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1214)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1136)
+	at org.testng.TestNG.runSuites(TestNG.java:1066)
+	at org.testng.TestNG.run(TestNG.java:1034)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>testnglearning_youtubechannel.SoftAssert_Learning@7cbd213e</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testnglearning_youtubechannel.DataProvider_Basic_Concept.AddUser()'><b>AddUser</b><br>Test class: testnglearning_youtubechannel.DataProvider_Basic_Concept<br>Parameters: NameOfTheUser, Chrome Browser, 989435345, seleniumpanda@redifffmail.com</td>
+<td></td>
+<td>0</td>
+<td>testnglearning_youtubechannel.DataProvider_Basic_Concept@757942a1</td></tr>
+<tr>
+<td title='testnglearning_youtubechannel.DataProvider_Basic_Concept.AddUser()'><b>AddUser</b><br>Test class: testnglearning_youtubechannel.DataProvider_Basic_Concept<br>Parameters: NameOfTheUser1, Firefox Browser, 989434345, seleniumpanda1@redifffmail.com</td>
+<td></td>
+<td>0</td>
+<td>testnglearning_youtubechannel.DataProvider_Basic_Concept@757942a1</td></tr>
+<tr>
+<td title='testnglearning_youtubechannel.DataProvider_Basic_Concept.AddUser()'><b>AddUser</b><br>Test class: testnglearning_youtubechannel.DataProvider_Basic_Concept<br>Parameters: NameOfTheUser2, ie Browser, 984435345, seleniumpanda2@redifffmail.com</td>
+<td></td>
+<td>0</td>
+<td>testnglearning_youtubechannel.DataProvider_Basic_Concept@757942a1</td></tr>
+<tr>
+<td title='testnglearning_youtubechannel.TestCases_DataProvider.AddUser()'><b>AddUser</b><br>Test class: testnglearning_youtubechannel.TestCases_DataProvider<br>Parameters: NameOfTheUser, Chrome Browser, 989435345, seleniumpanda@redifffmail.com</td>
+<td></td>
+<td>0</td>
+<td>testnglearning_youtubechannel.TestCases_DataProvider@b7dd107</td></tr>
+<tr>
+<td title='testnglearning_youtubechannel.TestCases_DataProvider.AddUser()'><b>AddUser</b><br>Test class: testnglearning_youtubechannel.TestCases_DataProvider<br>Parameters: NameOfTheUser1, Firefox Browser, 989434345, seleniumpanda1@redifffmail.com</td>
+<td></td>
+<td>0</td>
+<td>testnglearning_youtubechannel.TestCases_DataProvider@b7dd107</td></tr>
+<tr>
+<td title='testnglearning_youtubechannel.TestCases_DataProvider.AddUser()'><b>AddUser</b><br>Test class: testnglearning_youtubechannel.TestCases_DataProvider<br>Parameters: NameOfTheUser2, ie Browser, 984435345, seleniumpanda2@redifffmail.com</td>
+<td></td>
+<td>0</td>
+<td>testnglearning_youtubechannel.TestCases_DataProvider@b7dd107</td></tr>
+<tr>
+<td title='testnglearning_youtubechannel.Priority_TestCases_Execution.Apple()'><b>Apple</b><br>Test class: testnglearning_youtubechannel.Priority_TestCases_Execution</td>
+<td></td>
+<td>0</td>
+<td>testnglearning_youtubechannel.Priority_TestCases_Execution@2db7a79b</td></tr>
+<tr>
+<td title='testnglearning_youtubechannel.Priority_TestCases_Execution.Balloon()'><b>Balloon</b><br>Test class: testnglearning_youtubechannel.Priority_TestCases_Execution</td>
+<td></td>
+<td>0</td>
+<td>testnglearning_youtubechannel.Priority_TestCases_Execution@2db7a79b</td></tr>
+<tr>
+<td title='testnglearning_youtubechannel.Priority_TestCases_Execution.Coding()'><b>Coding</b><br>Test class: testnglearning_youtubechannel.Priority_TestCases_Execution</td>
+<td></td>
+<td>0</td>
+<td>testnglearning_youtubechannel.Priority_TestCases_Execution@2db7a79b</td></tr>
+<tr>
+<td title='testnglearning_youtubechannel.TestCases_ExcelSheet_DataProvider.Combo1()'><b>Combo1</b><br>Test class: testnglearning_youtubechannel.TestCases_ExcelSheet_DataProvider<br>Parameters: seleniumpanda@rediffmail.com, Selenium@123</td>
+<td></td>
+<td>2</td>
+<td>testnglearning_youtubechannel.TestCases_ExcelSheet_DataProvider@37374a5e</td></tr>
+<tr>
+<td title='testnglearning_youtubechannel.TestCases_ExcelSheet_DataProvider.Combo1()'><b>Combo1</b><br>Test class: testnglearning_youtubechannel.TestCases_ExcelSheet_DataProvider<br>Parameters: seleniumpanda1@rediffmail.com, Romeo@123</td>
+<td></td>
+<td>1</td>
+<td>testnglearning_youtubechannel.TestCases_ExcelSheet_DataProvider@37374a5e</td></tr>
+<tr>
+<td title='testnglearning_youtubechannel.TestCases_ExcelSheet_DataProvider.Combo1()'><b>Combo1</b><br>Test class: testnglearning_youtubechannel.TestCases_ExcelSheet_DataProvider<br>Parameters: seleniumpanda2@rediffmail.com, Hello@123</td>
+<td></td>
+<td>1</td>
+<td>testnglearning_youtubechannel.TestCases_ExcelSheet_DataProvider@37374a5e</td></tr>
+<tr>
+<td title='testnglearning_youtubechannel.TestCases_DataProvider.DeleteUser()'><b>DeleteUser</b><br>Test class: testnglearning_youtubechannel.TestCases_DataProvider<br>Parameters: NameOfTheUser, Chrome Browser, 989435345, seleniumpanda@redifffmail.com</td>
+<td></td>
+<td>0</td>
+<td>testnglearning_youtubechannel.TestCases_DataProvider@b7dd107</td></tr>
+<tr>
+<td title='testnglearning_youtubechannel.TestCases_DataProvider.DeleteUser()'><b>DeleteUser</b><br>Test class: testnglearning_youtubechannel.TestCases_DataProvider<br>Parameters: NameOfTheUser1, Firefox Browser, 989434345, seleniumpanda1@redifffmail.com</td>
+<td></td>
+<td>0</td>
+<td>testnglearning_youtubechannel.TestCases_DataProvider@b7dd107</td></tr>
+<tr>
+<td title='testnglearning_youtubechannel.TestCases_DataProvider.DeleteUser()'><b>DeleteUser</b><br>Test class: testnglearning_youtubechannel.TestCases_DataProvider<br>Parameters: NameOfTheUser2, ie Browser, 984435345, seleniumpanda2@redifffmail.com</td>
+<td></td>
+<td>0</td>
+<td>testnglearning_youtubechannel.TestCases_DataProvider@b7dd107</td></tr>
+<tr>
+<td title='testnglearning_youtubechannel.Always_Run.EnterProduct()'><b>EnterProduct</b><br>Test class: testnglearning_youtubechannel.Always_Run</td>
+<td></td>
+<td>0</td>
+<td>testnglearning_youtubechannel.Always_Run@6950e31</td></tr>
+<tr>
+<td title='testnglearning_youtubechannel.Always_Run.HomePageValidation()'><b>HomePageValidation</b><br>Test class: testnglearning_youtubechannel.Always_Run</td>
+<td></td>
+<td>0</td>
+<td>testnglearning_youtubechannel.Always_Run@6950e31</td></tr>
+<tr>
+<td title='testnglearning_youtubechannel.Only_TestCase_NoOtherTestNG_Annotations.HomePageValidationTest()'><b>HomePageValidationTest</b><br>Test class: testnglearning_youtubechannel.Only_TestCase_NoOtherTestNG_Annotations</td>
+<td></td>
+<td>0</td>
+<td>testnglearning_youtubechannel.Only_TestCase_NoOtherTestNG_Annotations@4671e53b</td></tr>
+<tr>
+<td title='testnglearning_youtubechannel.Always_Run.InvalidCredentials()'><b>InvalidCredentials</b><br>Test class: testnglearning_youtubechannel.Always_Run</td>
+<td></td>
+<td>0</td>
+<td>testnglearning_youtubechannel.Always_Run@6950e31</td></tr>
+<tr>
+<td title='testnglearning_youtubechannel.Only_TestCase_NoOtherTestNG_Annotations.LogOut()'><b>LogOut</b><br>Test class: testnglearning_youtubechannel.Only_TestCase_NoOtherTestNG_Annotations</td>
+<td></td>
+<td>0</td>
+<td>testnglearning_youtubechannel.Only_TestCase_NoOtherTestNG_Annotations@4671e53b</td></tr>
+<tr>
+<td title='testnglearning_youtubechannel.AlwaysRun.LogOut()'><b>LogOut</b><br>Test class: testnglearning_youtubechannel.AlwaysRun</td>
+<td></td>
+<td>0</td>
+<td>testnglearning_youtubechannel.AlwaysRun@52f759d7</td></tr>
+<tr>
+<td title='testnglearning_youtubechannel.Dependencies_TestCases.LoginPageDataEntry()'><b>LoginPageDataEntry</b><br>Test class: testnglearning_youtubechannel.Dependencies_TestCases</td>
+<td></td>
+<td>0</td>
+<td>testnglearning_youtubechannel.Dependencies_TestCases@42eca56e</td></tr>
+<tr>
+<td title='testnglearning_youtubechannel.Always_Run.LoginPageOpen()'><b>LoginPageOpen</b><br>Test class: testnglearning_youtubechannel.Always_Run</td>
+<td></td>
+<td>0</td>
+<td>testnglearning_youtubechannel.Always_Run@6950e31</td></tr>
+<tr>
+<td title='testnglearning_youtubechannel.Always_Run.Logout()'><b>Logout</b><br>Test class: testnglearning_youtubechannel.Always_Run</td>
+<td></td>
+<td>0</td>
+<td>testnglearning_youtubechannel.Always_Run@6950e31</td></tr>
+<tr>
+<td title='testnglearning_youtubechannel.ITestContext_Learning.Operating()'><b>Operating</b><br>Test class: testnglearning_youtubechannel.ITestContext_Learning<br>Parameters: org.testng.TestRunner@1ce93c18</td>
+<td></td>
+<td>0</td>
+<td>testnglearning_youtubechannel.ITestContext_Learning@4a87761d</td></tr>
+<tr>
+<td title='testnglearning_youtubechannel.Learning_Assertions.ParameterA()'><b>ParameterA</b><br>Test class: testnglearning_youtubechannel.Learning_Assertions</td>
+<td></td>
+<td>0</td>
+<td>testnglearning_youtubechannel.Learning_Assertions@8646db9</td></tr>
+<tr>
+<td title='testnglearning_youtubechannel.TestCases_DataProvider.RegisterUser()'><b>RegisterUser</b><br>Test class: testnglearning_youtubechannel.TestCases_DataProvider<br>Parameters: NameOfTheUser, Chrome Browser, 989435345, seleniumpanda@redifffmail.com</td>
+<td></td>
+<td>0</td>
+<td>testnglearning_youtubechannel.TestCases_DataProvider@b7dd107</td></tr>
+<tr>
+<td title='testnglearning_youtubechannel.TestCases_DataProvider.RegisterUser()'><b>RegisterUser</b><br>Test class: testnglearning_youtubechannel.TestCases_DataProvider<br>Parameters: NameOfTheUser1, Firefox Browser, 989434345, seleniumpanda1@redifffmail.com</td>
+<td></td>
+<td>0</td>
+<td>testnglearning_youtubechannel.TestCases_DataProvider@b7dd107</td></tr>
+<tr>
+<td title='testnglearning_youtubechannel.TestCases_DataProvider.RegisterUser()'><b>RegisterUser</b><br>Test class: testnglearning_youtubechannel.TestCases_DataProvider<br>Parameters: NameOfTheUser2, ie Browser, 984435345, seleniumpanda2@redifffmail.com</td>
+<td></td>
+<td>0</td>
+<td>testnglearning_youtubechannel.TestCases_DataProvider@b7dd107</td></tr>
+<tr>
+<td title='testnglearning_youtubechannel.ITestContext_Learning.SwitchON()'><b>SwitchON</b><br>Test class: testnglearning_youtubechannel.ITestContext_Learning<br>Parameters: org.testng.TestRunner@1ce93c18</td>
+<td></td>
+<td>0</td>
+<td>testnglearning_youtubechannel.ITestContext_Learning@4a87761d</td></tr>
+<tr>
+<td title='testnglearning_youtubechannel.ITestContext_Learning.SwitchOff()'><b>SwitchOff</b><br>Test class: testnglearning_youtubechannel.ITestContext_Learning<br>Parameters: org.testng.TestRunner@1ce93c18</td>
+<td></td>
+<td>0</td>
+<td>testnglearning_youtubechannel.ITestContext_Learning@4a87761d</td></tr>
+<tr>
+<td title='testnglearning_youtubechannel.Dependencies_TestCases.URLOpen()'><b>URLOpen</b><br>Test class: testnglearning_youtubechannel.Dependencies_TestCases</td>
+<td></td>
+<td>10</td>
+<td>testnglearning_youtubechannel.Dependencies_TestCases@42eca56e</td></tr>
+<tr>
+<td title='testnglearning_youtubechannel.Always_Run.URLOpening()'><b>URLOpening</b><br>Test class: testnglearning_youtubechannel.Always_Run<br>Test method: Website Opening/Invoking</td>
+<td></td>
+<td>0</td>
+<td>testnglearning_youtubechannel.Always_Run@6950e31</td></tr>
+<tr>
+<td title='testnglearning_youtubechannel.Always_Run.ValidCredentials()'><b>ValidCredentials</b><br>Test class: testnglearning_youtubechannel.Always_Run</td>
+<td></td>
+<td>0</td>
+<td>testnglearning_youtubechannel.Always_Run@6950e31</td></tr>
+<tr>
+<td title='testnglearning_youtubechannel.Dependencies_TestCases.gotoLoginPage()'><b>gotoLoginPage</b><br>Test class: testnglearning_youtubechannel.Dependencies_TestCases</td>
+<td></td>
+<td>1</td>
+<td>testnglearning_youtubechannel.Dependencies_TestCases@42eca56e</td></tr>
+<tr>
+<td title='testnglearning_youtubechannel.Only_TestCase_NoOtherTestNG_Annotations.launchbrowser()'><b>launchbrowser</b><br>Test class: testnglearning_youtubechannel.Only_TestCase_NoOtherTestNG_Annotations</td>
+<td></td>
+<td>0</td>
+<td>testnglearning_youtubechannel.Only_TestCase_NoOtherTestNG_Annotations@4671e53b</td></tr>
+<tr>
+<td title='testnglearning_youtubechannel.Only_TestCase_NoOtherTestNG_Annotations.loginTest()'><b>loginTest</b><br>Test class: testnglearning_youtubechannel.Only_TestCase_NoOtherTestNG_Annotations</td>
+<td></td>
+<td>0</td>
+<td>testnglearning_youtubechannel.Only_TestCase_NoOtherTestNG_Annotations@4671e53b</td></tr>
+<tr>
+<td title='testnglearning_youtubechannel.TestNg_Annotations.logintest()'><b>logintest</b><br>Test class: testnglearning_youtubechannel.TestNg_Annotations</td>
+<td></td>
+<td>0</td>
+<td>testnglearning_youtubechannel.TestNg_Annotations@69b0fd6f</td></tr>
+<tr>
+<td title='testnglearning_youtubechannel.TestNg_Annotations.regtest()'><b>regtest</b><br>Test class: testnglearning_youtubechannel.TestNg_Annotations</td>
+<td></td>
+<td>0</td>
+<td>testnglearning_youtubechannel.TestNg_Annotations@69b0fd6f</td></tr>
+</table><p>
+</body>
+</html>

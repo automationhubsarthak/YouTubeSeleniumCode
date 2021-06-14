@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [EnglishSuite]">
+  <test thread-count="5" name="Hard vs Soft Assert Test(failed)">
+    <classes>
+      <class name="testnglearning_youtubechannel.HardAssert_vs_SoftAssert">
+        <methods>
+          <include name="HardAssertionLogic"/>
+          <include name="SoftAssertionLogic"/>
+        </methods>
+      </class> <!-- testnglearning_youtubechannel.HardAssert_vs_SoftAssert -->
+    </classes>
+  </test> <!-- Hard vs Soft Assert Test(failed) -->
+</suite> <!-- Failed suite [EnglishSuite] -->

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Paramterization testngxml Suite]">
+  <test thread-count="5" name="Parameterize Test(failed)">
+    <parameter name="password" value="Selenium@123"/>
+    <parameter name="emailid" value="seleniumpanda@rediffmail.com"/>
+    <parameter name="url" value="https://rediff.com"/>
+    <parameter name="Browser" value="chrome"/>
+    <classes>
+      <class name="testnglearning_youtubechannel.Paramterization_tngxml">
+        <methods>
+          <include name="SetUp" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- testnglearning_youtubechannel.Paramterization_tngxml -->
+    </classes>
+  </test> <!-- Parameterize Test(failed) -->
+</suite> <!-- Failed suite [Paramterization testngxml Suite] -->

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="classes">
+  <test thread-count="5" name="Test" parallel="classes">
+    <classes>
+      <class name="taditseleniumbatch.TestNG_Concepts"/>
+      <class name="testng.Annotations"/>
+      <class name="testnglearning_youtubechannel.Hindi_Priority_Enabled"/>
+      <class name="rediff.Rediff_UsingTestNG"/>
+      <class name="selenium_testng_basics.First_Class"/>
+      <class name="openweathermap.TestLabels"/>
+      <class name="taditseleniumbatch.Difference_Annotations"/>
+      <class name="automationpractice.CreatingAccount"/>
+      <class name="browsers.InternetExplorer_Weird"/>
+      <class name="testnglearning_youtubechannel.Hindi_Assertions"/>
+      <class name="testnglearning_youtubechannel.Dependencies_TestCases"/>
+      <class name="impact_sanity_tasks.Task2604"/>
+      <class name="taditseleniumbatch2.Rediff_TestNG"/>
+      <class name="taditseleniumbatch.Properties_File_Concept"/>
+      <class name="testnglearning_youtubechannel.ITestContext_Learning"/>
+      <class name="testnglearning_youtubechannel.HardAssert_vs_SoftAssert"/>
+      <class name="testnglearning_youtubechannel.TestCases_ExcelSheet_DataProvider"/>
+      <class name="testnglearning_youtubechannel.Hindi_Dependencies"/>
+      <class name="testng_cmegroup.Verifying_Trio_Combo"/>
+      <class name="excelsheet.LoginTest"/>
+      <class name="testnglearning_youtubechannel.Hindi_ITestContext"/>
+      <class name="taditseleniumbatch.Assertions_TestNG"/>
+      <class name="browsers.Browser_Select"/>
+      <class name="testnglearning_youtubechannel.Priority_TestCases_Execution"/>
+      <class name="testnglearning_youtubechannel.Always_Run"/>
+      <class name="testngparametrization.Login"/>
+      <class name="testnglearning_youtubechannel.TestCases_DataProvider"/>
+      <class name="browserStack.BrowserStack_Test"/>
+      <class name="testnglearning_youtubechannel.Hindi_HardAssert_vs_SoftAssert"/>
+      <class name="openweathermap.SignUp"/>
+      <class name="testnglearning_youtubechannel.Learning_Assertions"/>
+      <class name="taditseleniumbatch.Annotations_TestNG"/>
+      <class name="junitpackage.Browser"/>
+      <class name="javascriptexecutors.JS_Rediff"/>
+      <class name="testng_cmegroup.Annotations"/>
+      <class name="testnglearning_youtubechannel.Hindi_BM_T_AM"/>
+      <class name="testnglearning_youtubechannel.Hindi_DataProvider"/>
+      <class name="testnglearning_youtubechannel.Hindi_SoftAssert_Learning"/>
+      <class name="testng_important_topics.A"/>
+      <class name="browsers.LearningDataProvider"/>
+      <class name="testng_cmegroup.Complete_TestNG_Features"/>
+      <class name="testnglearning_youtubechannel.AlwaysRun"/>
+      <class name="testng_cmegroup.Trio_Combination"/>
+      <class name="testnglearning_youtubechannel.SoftAssert_Learning"/>
+      <class name="testnglearning_youtubechannel.DataProvider_Basic_Concept"/>
+      <class name="testng.Hindi_Groups"/>
+      <class name="impact_sanity_tasks.Task2583"/>
+      <class name="rediff.Rediff"/>
+      <class name="taditseleniumbatch2.TestNG"/>
+      <class name="taditseleniumbatch2.TestNG_Annotations"/>
+      <class name="taditseleniumbatch2.A"/>
+      <class name="hotlanta.Login_Hotlanta"/>
+      <class name="taditseleniumbatch2.C"/>
+      <class name="taditseleniumbatch2.B"/>
+      <class name="taditseleniumbatch.Rediff_TestNg_annotations"/>
+      <class name="testnglearning_youtubechannel.Only_TestCase_NoOtherTestNG_Annotations"/>
+      <class name="testnglearning_youtubechannel.TestNg_Annotations"/>
+      <class name="testnglearning_youtubechannel.Hindi_AlwaysRun"/>
+      <class name="taditseleniumbatch.DataProvider_Concept"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
